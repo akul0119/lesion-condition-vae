@@ -1,0 +1,59 @@
+{
+  "base_path": "/Users/akulsharma/Desktop/domain_analysis/rodent/process",
+
+  "tracts": [
+    "fimbria_left",
+    "fimbria_right",
+    "thalsub_left",
+    "thalsub_right",
+    "atr_left",
+    "atr_right",
+    "chip_left",
+    "chip_right"
+  ],
+
+  "timepoints": ["2d", "9d", "1mo", "5mo"],
+
+  "groups": {
+    "Sham": [1017, 1035, 1045, 1085, 1091, 1096, 1107, 1143, 1146, 1155, 1161],
+    "TBI": [1043, 1046, 1095, 1099, 1103, 1105, 1138, 1139, 1142, 1145,
+            1149, 1150, 1152, 1153, 1154, 1156, 1158, 1159],
+    "PTE": [1008, 1012, 1024, 1029, 1031, 1084, 1104, 1140]
+  },
+
+  "microstructure_features": [
+    "dti_ad",
+    "dti_fa",
+    "dti_md",
+    "dti_rd",
+    "mge_r2star",
+    "mge_t2star",
+    "xfib_crossing_fraction",
+    "xfib_crossing_strength",
+    "xfib_d",
+    "xfib_f1",
+    "xfib_f2",
+    "xfib_f3",
+    "xfib_primary_fraction"
+  ],
+
+  "lesion_features": [
+    "in_lesion",
+    "in_cavity",
+    "lesion_distance"
+  ],
+
+  "model_params": {
+    "latent_dim": 10,
+    "epochs": 40,
+    "batch_size": 64,
+    "learning_rate": 0.0002,
+    "seed": 42
+  },
+
+  "analysis_params": {
+    "n_segments": 20,
+    "alpha": 0.05,
+    "effect_size_threshold": 0.5
+  }
+}
