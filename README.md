@@ -180,28 +180,6 @@ Edit `configs/tract_config.json`:
 - Correlation heatmaps by group/timepoint
 - Significant correlations table (CSV)
 
-## Key Analysis Results
-
-### Tract Geometry Metrics
-- **2,356 records** (37 subjects × 4 timepoints × 16 tracts)
-- 11 geometric features per tract
-- Aggregated at subject level for ML
-
-### Classification Performance (Best: 5mo)
-- Random Forest: 69% accuracy, AUC=0.653
-- Most important features: elongation_ratio, planarity_ratio
-
-### Lesion-Tract Correlations
-- **28 significant correlations** (p<0.05)
-- Strongest: P5 ↔ anisotropy_ratio (r=0.832, PTE @ 1mo)
-- Temporal patterns differ: PTE peaks at 1mo, TBI at 5mo
-
-### Centroid Displacement
-- Peak at 9d: TBI=10.8mm, PTE=14.2mm
-- PTE shows greater displacement throughout
-
-## Citation
-
 If you use this framework, please cite:
 
 ```bibtex
